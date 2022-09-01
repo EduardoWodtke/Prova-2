@@ -30,8 +30,9 @@
     tempo = (tempoDemoradoAUm + tempoDemoradoADois + tempoDemoradoATres + tempoDemoradoAQuatro + tempoDemoradoACinco) / 5;
 
     (tempo <= 2)? resultado = "problemas MUITO facil"
-    : (tempo <= 5)? resultado = "problemas no nivel treinamento"
-    : resultado = "problemas no nivel amistoso";
+    :(tempo <= 5)? resultado = "problemas no nivel treinamento"
+    :(tempo > 5)?resultado = "problemas no nivel amistoso"
+    :resultado = "invalido";
 
     //SAÍDA
     

@@ -33,7 +33,8 @@
     pontos = (1.5 * anosCarreira) + (4 * pesquisaCordenou) + (4 * projetosExtencao) + (3 * tccOrientado);
 
     (pontos > 20)? resultado = "você é agregado"
-    : resultado = "você é convidado";
+    :(pontos <= 20)? resultado = "você é convidado"
+    :resultado = "invalido";
 
     //SAÍDA
 
