@@ -11,10 +11,30 @@
 
     //ENTRADA
 
+    const tempoDemoradoAUm = parseInt(prompt("quanto tempo demora pra fazer dever programação (apenas em minutos)"))
+
+    const tempoDemoradoADois = parseInt(prompt("quanto tempo demora pra fazer dever programação (apenas em minutos)"))
+
+    const tempoDemoradoATres = parseInt(prompt("quanto tempo demora pra fazer dever programação (apenas em minutos)"))
+
+    const tempoDemoradoAQuatro = parseInt(prompt("quanto tempo demora pra fazer dever programação (apenas em minutos)"))
+
+    const tempoDemoradoACinco = parseInt(prompt("quanto tempo demora pra fazer dever programação (apenas em minutos)"));
 
     //PROCESSAMENTO
 
+    let resultado;
+
+    let tempo;
+
+    tempo = (tempoDemoradoAUm + tempoDemoradoADois + tempoDemoradoATres + tempoDemoradoAQuatro + tempoDemoradoACinco) / 5;
+
+    (tempo <= 2)? resultado = "problemas MUITO facil"
+    : (tempo <= 5)? resultado = "problemas no nivel treinamento"
+    : resultado = "problemas no nivel amistoso";
 
     //SAÍDA
+    
+    document.write(`${resultado}`);
 
 </script>

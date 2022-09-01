@@ -16,10 +16,27 @@
 
     //ENTRADA
 
+    const anosCarreira = parseInt(prompt("Quandos anos de carreira orientado:"))
+
+    const pesquisaCordenou = parseInt(prompt("quantos projetos ja cordenou orientado:"))
+
+    const projetosExtencao = parseInt(prompt("quantos projetos de extenção orientado:"))
+
+    const tccOrientado = parseInt(prompt("quantos tcc ja orientado:"));
 
     //PROCESSAMENTO
 
+    let resultado;
+
+    let pontos;
+
+    pontos = (1.5 * anosCarreira) + (4 * pesquisaCordenou) + (4 * projetosExtencao) + (3 * tccOrientado);
+
+    (pontos > 20)? resultado = "você é agregado"
+    : resultado = "você é convidado";
 
     //SAÍDA
+
+    document.write(`${resultado}`)
 
 </script>

@@ -12,10 +12,34 @@
 
     //ENTRADA
 
+    const corLivro = prompt("informe se vai ser a colorido, preto e branco ou animação: (c-colorido | pb-preto e branco | a-animação)")
+
+    const qntsPaginas = Number(prompt("informe o numero de paginas:"));
 
     //PROCESSAMENTO
 
+    let resultado;
+
+    const preçoDaFolha = 1.1;
+
+    let preçoTotalPaginas = preçoDaFolha * qntsPaginas;
+
+    switch(corLivro){
+        case "c":
+            resultado = preçoTotalPaginas * 1.1;
+        break;
+        case "pb":
+            resultado = preçoTotalPaginas * 1.05;
+        break;
+        case "a":
+            resultado = preçoTotalPaginas * 1.15;
+        break;
+        default:
+            resultado = "ERROR!";
+    }
 
     //SAÍDA
+
+    document.write(`O preço vai ser R$${resultado.toFixed(2)}`)
 
 </script>

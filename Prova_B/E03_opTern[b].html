@@ -12,10 +12,20 @@
 
     //ENTRADA
 
+    const valorTerreno = Number(prompt("insira valor do terreno:"))
+
+    const qntsAnosPagar = parseInt(prompt("informe quantos anos sera necessários para pagar:"))
 
     //PROCESSAMENTO
 
+    let resultado;
+
+    (qntsAnosPagar <= 5)? resultado = valorTerreno * 1.05
+    :(qntsAnosPagar <= 10)? resultado = valorTerreno * 1.15
+    :resultado =  valorTerreno * 1.30;
 
     //SAÍDA
+
+    document.write(`valor do terreno a ser pago será ${resultado}`)
 
 </script>
