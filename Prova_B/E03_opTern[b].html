@@ -20,7 +20,7 @@
 
     let resultado;
 
-    (qntsAnosPagar <= 5)? resultado = valorTerreno * 1.05
+    (qntsAnosPagar <= 5)? resultado = (valorTerreno * 0.05) - valorTerreno
     :(qntsAnosPagar <= 10)? resultado = valorTerreno * 1.15
     :(qntsAnosPagar > 10)? resultado =  valorTerreno * 1.30
     :resultado = "ERROR";
